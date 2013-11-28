@@ -6,7 +6,6 @@ Pod::Spec.new do |s|
 	s.author   		= { 'Indragie Karunaratne' => 'indragiek@gmail.com' }
 	s.source_files	= '*.{h,m}'
 	s.source   		= { :git => 'git://github.com/sonoramac/INAppStoreWindow.git' }
-	s.clean_paths	= 'SampleApp'
 	s.platform 		= :osx
 	s.requires_arc 	= true
 	s.license		= 'BSD'
