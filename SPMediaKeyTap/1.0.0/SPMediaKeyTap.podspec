@@ -6,6 +6,9 @@ Pod::Spec.new do |s|
 	s.homepage = 'https://github.com/sonoramac/SPMediaKeyTap'
 	s.authors = {'Joachim Bengtsson' => 'joachimb@gmail.com'}
 	s.source = { :git => 'git://github.com/sonoramac/SPMediaKeyTap.git' }
+
+	s.frameworks 		= 'Cocoa'
+	s.platform 		= :osx
 	s.subspec 'SPMediaKeyTapBase' do |ss|
     	ss.source_files = 'SPMediaKeyTap.{h,m}'
   	end

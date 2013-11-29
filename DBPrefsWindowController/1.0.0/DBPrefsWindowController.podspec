@@ -6,6 +6,7 @@ Pod::Spec.new do |s|
 	s.authors = {'David Keegan' => 'git@davidkeegan.com', 'Dave Batton' => ''}
 	s.source = { :git => 'git://github.com/sonoramac/DBPrefsWindowController.git' }
 	s.source_files = 'Source/DBPrefsWindowController.{h,m}'
-	s.framework = 'Carbon'
+	s.platform 		= :osx
+	s.framework = 'Cocoa'
 	s.requires_arc = true
 end

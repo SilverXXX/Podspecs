@@ -6,9 +6,16 @@ Pod::Spec.new do |s|
 	s.authors = {'Enrique Osuna' => ''}
 	s.source = { :git => 'git://github.com/SilverXXX/OEGridView.git' }
 	s.source_files = '*.{h,m}'
-	s.framework = 'QuartzCore'
+  s.exclude_files= 'NSColor+OEAdditions.m'
+	s.framework = 'QuartzCore', 'Cocoa', 'AppKit'
 	s.requires_arc = true
+  s.platform    = :osx
 
+  s.subspec 'NoArc' do |sp|
+    sp.source_files = 'NSColor+OEAdditions.m'
+    sp.requires_arc = false
+  end
+=begin 
   s.post_install do |installer|
     project = installer.project
     project.objects.each do |obj|
@@ -21,4 +28,5 @@ Pod::Spec.new do |s|
       end
     end
   end
+=end
 end

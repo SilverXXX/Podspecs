@@ -6,5 +6,6 @@ Pod::Spec.new do |s|
 	s.authors = {'Felix Shwarz' => ''}
 	s.source = { :git => 'git://github.com/sonoramac/HIDRemoteSDK.git' }
 	s.source_files = 'HIDRemote'
-	s.framework = 'IOKit'
+	s.platform 		= :osx
+	s.framework = 'IOKit', 'Cocoa'
 end
